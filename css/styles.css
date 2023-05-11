@@ -1,12 +1,13 @@
 .header {
   position: fixed;
+  min-width: 320px;
   width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
 }
 .header__name {
@@ -44,16 +45,19 @@
 .header__navbar__item {
   padding: 10px 15px;
   margin: 2px 0;
-  color: white;
+  color: black;
   font-weight: 600;
   cursor: pointer;
   border-radius: 8px;
+  transition: all 0.2s ease-in-out;
 }
 .header__navbar__item:hover {
   background-color: rgb(59, 130, 246);
+  color: white;
 }
 .header__navbar__item--active {
   background-color: rgb(59, 130, 246);
+  color: white;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -61,6 +65,70 @@
     display: none;
   }
 }
+.hero {
+  background: url("../../img/bg-hero.png") center/cover;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10px;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.hero__title {
+  font-size: 45px;
+  color: #222;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 30px;
+}
+.hero__subtitle {
+  font-size: 40px;
+  color: rgb(59, 130, 246);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hero__text {
+  font-size: 18px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.hero__text span {
+  font-weight: 700;
+}
+.hero__contact {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.hero__contact a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+.hero__btn-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hero__btn-wrapper__btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: rgb(59, 130, 246);
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 15px 60px;
+}
+.hero__image {
+  width: 70%;
+  min-width: 320px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +138,7 @@
 
 body {
   min-width: 320px;
+  background-color: #e8fbff;
 }
 
 input {

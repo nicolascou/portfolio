@@ -1,4 +1,5 @@
 @import 'layout/header';
+@import 'layout/hero';
 
 * {
   margin: 0;
@@ -9,6 +10,7 @@
 
 body {
   min-width: 320px;
+  background-color: #e8fbff;
 }
 
 input {
