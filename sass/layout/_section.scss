@@ -2,6 +2,7 @@
 
 .section {
   padding: 10px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +12,7 @@
     text-align: center;
     font-size: 40px;
     color: $secondary-color;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   &__flex {
@@ -24,6 +25,7 @@
   &__image-animated {
     background: url('../../img/profile-pic.jpg') center / cover;
     border-radius: 50%;
+    margin-top: 20px;
     width: 300px;
     height: 300px;
     border: 4px solid $primary-color;
@@ -46,6 +48,23 @@
         display: block;
         margin: 12px 0;
       }
+    }
+  }
+
+  &__flex-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    i {
+      font-size: 60px;
+      margin: 20px;
+    }
+    img {
+      width: 60px;
+      height: 60px;
+      margin: 20px;
     }
   }
 }
