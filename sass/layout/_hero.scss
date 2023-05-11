@@ -8,7 +8,7 @@
   padding-top: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
 
   &__title {
@@ -69,5 +69,6 @@
   &__image {
     width: 70%;
     min-width: 320px;
+    margin-bottom: 40px;
   }
 }

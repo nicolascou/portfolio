@@ -1,10 +1,15 @@
 @import 'layout/header';
 @import 'layout/hero';
+@import 'layout/section';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+h1, h2, h3 {
   font-family: 'Noto Sans', sans-serif;
 }
 
