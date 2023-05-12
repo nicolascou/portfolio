@@ -7,3 +7,14 @@ $light-color: #e8fbff;
     @content;
   }
 }
+
+@mixin defaultBtn {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: $primary-color;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 15px 60px;
+  display: inline-block;
+}

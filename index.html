@@ -17,6 +17,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
 </head>
 <body>
   <header class="header">
@@ -104,9 +108,43 @@
 
   <section class="section">
     <h2 class="section__title">Projects</h2>
-    
+    <div class="section__flex">
+      <div class="section__card">
+
+        <div class="swiper section__card__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/hotel-miranda.png" alt="Front page hotel miranda">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hotel-miranda.png" alt="Front page hotel miranda">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hotel-miranda.png" alt="Front page hotel miranda">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        
+          <div class="section__card__slider__prev section__card__slider__btn"></div>
+          <div class="section__card__slider__next section__card__slider__btn"></div>
+        </div>
+
+        <div class="section__card__content">
+          <p class="section__card__title">Hotel Miranda</p>
+          <p class="section__card__description">
+            · Hotel Website Layout 🏨 <br>
+            · Responsive Design 📱 <br>
+            · Made with SASS 🎨 <br>
+            · BEM methodology 📜
+          </p>
+          <a href="https://nicolascou.github.io/hotel-miranda" class="section__card__btn">Visit Website</a>
+        </div>
+      </div>
+    </div>
   </section>
   
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/sliders.js" type="module"></script>
 </body>
 </html>
