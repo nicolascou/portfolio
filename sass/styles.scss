@@ -1,6 +1,7 @@
 @import 'layout/header';
 @import 'layout/hero';
 @import 'layout/section';
+@import 'layout/footer';
 
 * {
   margin: 0;
@@ -20,6 +21,20 @@ body {
 
 input {
   outline: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  *:first-child {
+    margin-right: 10px;
+  }
 }
 
 :root {
