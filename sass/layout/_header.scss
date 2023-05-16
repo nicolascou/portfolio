@@ -73,6 +73,8 @@
 
 @include largeScreen {
   .header {
+    padding: 10px 30px;
+    
     &__menu-btn {
       display: none;
     }

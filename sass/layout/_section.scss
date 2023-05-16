@@ -57,10 +57,6 @@
     align-items: center;
     flex-wrap: wrap;
     
-    i {
-      font-size: 60px;
-      margin: 20px;
-    }
     img {
       width: 70px;
       height: 70px;
@@ -154,13 +150,81 @@
       width: fit-content;
     }
   }
+
+  &__anchor {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    a {
+      text-decoration: none;
+      position: relative;
+      color: black;
+      padding-bottom: 3px;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: black;
+      transform-origin: bottom right;
+      transition: transform 0.4s ease-out;
+    }
+    
+    a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
 }
 
 @include largeScreen {
   .section {
+    margin-top: 50px;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+    
     &__flex {
       flex-direction: row;
       flex-wrap: wrap;
+    }
+
+    &__text {
+      display: inline-block;
+      line-height: 1.9;
+      max-width: 1200px;
+    }
+
+    &__aboutme {
+      flex-basis: 40%;
+    }
+
+    &__image-animated-wrapper {
+      flex-basis: 45%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__image-animated {
+      margin: 0;
+      margin-right: 100px;
+    }
+
+    &__flex-icons {
+      max-width: 1100px;
+      margin-bottom: 20px;
+
+      img {
+        height: 100px;
+        width: 100px;
+        margin: 25px;
+      }
     }
 
     &__card {
