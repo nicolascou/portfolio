@@ -232,3 +232,14 @@
     }
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .section {
+    &__card {
+      width: 300px;
+      &__btn {
+        font-size: 16px;
+      }
+    }
+  }
+}

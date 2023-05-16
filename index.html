@@ -35,16 +35,16 @@
 
     <nav id="navBar" class="header__navbar header__navbar--hide animate__animated animate__fadeInRight">
       <ul>
-        <li class="header__navbar__item header__navbar__item--active">Home</li>
-        <li class="header__navbar__item">About</li>
-        <li class="header__navbar__item">Skills</li>
-        <li class="header__navbar__item">Projects</li>
-        <li class="header__navbar__item">Contact</li>
+        <li name="home" id="navHome" class="header__navbar__item header__navbar__item--active">Home</li>
+        <li name="about" id="navAbout" class="header__navbar__item">About</li>
+        <li name="skills" id="navSkills" class="header__navbar__item">Skills</li>
+        <li name="projects" id="navProj" class="header__navbar__item">Projects</li>
+        <li name="contact" id="navCont" class="header__navbar__item">Contact</li>
       </ul>
     </nav>
   </header>
 
-  <div class="hero">
+  <div class="hero" id="home">
     <div class="animate__animated animate__fadeIn hero__presentation">
       <h2 class="hero__title">Hi, I am Nico</h2>
       <h2 class="hero__subtitle">Full Stack Developer</h2>
@@ -72,7 +72,7 @@
   </div>
 
   <section class="section">
-    <h2 class="section__title">About Me</h2>
+    <h2 id="about" class="section__title">About Me</h2>
     <div class="section__flex">
       <div class="section__image-animated-wrapper">
         <div class="section__image-animated"></div>
@@ -88,7 +88,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="skills">
     <h2 class="section__title">Skills</h2>
     <h3 class="section__text__title">Technologies I use</h3>
     <div class="section__flex-icons">
@@ -109,7 +109,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="projects">
     <h2 class="section__title">Projects</h2>
     <div class="section__flex">
       <div class="section__card">
@@ -271,7 +271,7 @@
     <a href="https://github.com/nicolascou" class="section__anchor">Go to my Github to see all my projects <i class="fa-solid fa-arrow-right"></i></a>
   </div>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <h2 class="footer__title">Contact</h2>
     <div class="section__flex">
       <div class="flex-center">

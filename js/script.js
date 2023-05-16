@@ -26,3 +26,24 @@ function resizeScreen() {
     navBar.classList.add('animate__animated');
   }
 }
+
+const navItems = document.querySelectorAll('.header__navbar__item');
+
+navItems.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    const targetId = item.getAttribute('name');
+    const targetSection = document.getElementById(targetId);
+
+    navItems.forEach((navLink) => {
+      navLink.classList.remove('header__navbar__item--active');
+    });
+
+    item.classList.add('header__navbar__item--active');
+
+    console.log(targetSection)
+    window.scrollTo({
+      behavior: 'smooth',
+      top: targetSection.getBoundingClientRect().top  + window.pageYOffset - 100
+    });
+  });
+});
