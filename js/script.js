@@ -1,17 +1,28 @@
 const hamburgerBtn = document.getElementById('hamburgerBtn');
 const closeBtn = document.getElementById('closeBtn');
-const mobileNav = document.getElementById('mobileNav');
+const navBar = document.getElementById('navBar');
 
 hamburgerBtn.addEventListener('click', () => {
   closeBtn.classList.remove('header__menu-btn--hide');
   hamburgerBtn.classList.add('header__menu-btn--hide');
-  mobileNav.classList.remove('header__navbar--hide');
-  mobileNav.classList.remove('animate__fadeOutRight');
-  mobileNav.classList.add('animate__fadeInLeft');
+  navBar.classList.remove('header__navbar--hide');
+  navBar.classList.remove('animate__fadeOutRight');
+  navBar.classList.add('animate__fadeInLeft');
 });
 closeBtn.addEventListener('click', () => {
   hamburgerBtn.classList.remove('header__menu-btn--hide');
   closeBtn.classList.add('header__menu-btn--hide');
-  mobileNav.classList.add('animate__fadeOutRight');
-  mobileNav.classList.remove('animate__fadeInLeft');
+  navBar.classList.add('animate__fadeOutRight');
+  navBar.classList.remove('animate__fadeInLeft');
 });
+
+const media = matchMedia('(min-width: 1000px)');
+media.addEventListener('change', resizeScreen);
+
+function resizeScreen() {
+  if (window.matchMedia("(min-width: 1000px)").matches) {
+    navBar.classList.remove('animate__animated');
+  } else {
+    navBar.classList.add('animate__animated');
+  }
+}

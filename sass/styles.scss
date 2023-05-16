@@ -37,6 +37,12 @@ input {
   }
 }
 
+@include largeScreen {
+  .flex-center {
+    margin: 0 50px;
+  }
+}
+
 :root {
   --swiper-theme-color: #3482F6 !important;
 }
