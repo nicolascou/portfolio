@@ -34,15 +34,12 @@ navItems.forEach((item) => {
     const targetId = item.getAttribute('name');
     const targetSection = document.getElementById(targetId);
 
-    navItems.forEach((navLink) => {
-      navLink.classList.remove('header__navbar__item--active');
-    });
+    document.querySelector('.header__navbar__item--active').classList.remove('header__navbar__item--active');
 
     item.classList.add('header__navbar__item--active');
 
-    console.log(targetSection)
     window.scrollTo({
-      behavior: 'smooth',
+      behavior: 'auto',
       top: targetSection.getBoundingClientRect().top  + window.pageYOffset - 100
     });
   });
