@@ -35,17 +35,17 @@
 
     <nav id="navBar" class="header__navbar header__navbar--hide animate__animated animate__fadeInRight">
       <ul>
-        <li class="header__navbar__item header__navbar__item--active">Home</li>
-        <li class="header__navbar__item">About</li>
-        <li class="header__navbar__item">Skills</li>
-        <li class="header__navbar__item">Projects</li>
-        <li class="header__navbar__item">Contact</li>
+        <li name="home" id="navHome" class="header__navbar__item header__navbar__item--active">Home</li>
+        <li name="about" id="navAbout" class="header__navbar__item">About</li>
+        <li name="skills" id="navSkills" class="header__navbar__item">Skills</li>
+        <li name="projects" id="navProj" class="header__navbar__item">Projects</li>
+        <li name="contact" id="navCont" class="header__navbar__item">Contact</li>
       </ul>
     </nav>
   </header>
 
-  <div class="hero">
-    <div class="animate__animated animate__fadeIn">
+  <div class="hero" id="home">
+    <div class="animate__animated animate__fadeIn hero__presentation">
       <h2 class="hero__title">Hi, I am Nico</h2>
       <h2 class="hero__subtitle">Full Stack Developer</h2>
       <p class="hero__text">I am a <b>Full Stack Developer</b> from Spain, especialized in 
@@ -72,21 +72,23 @@
   </div>
 
   <section class="section">
-    <h2 class="section__title">About Me</h2>
+    <h2 id="about" class="section__title">About Me</h2>
     <div class="section__flex">
-      <div class="section__image-animated"></div>
-      <div class="section__text">
+      <div class="section__image-animated-wrapper">
+        <div class="section__image-animated"></div>
+      </div>
+      <div class="section__text section__aboutme">
         <h3 class="section__text__title">A bit about me</h3>
         <p class="section__text__plain">
           <span>· I started coding in Python when I was 13 and I have always loved technology.</span>
           <span>· I see online self-education as one of the main achievements of humanity and I am a big fan of Open Source and online peer-to-peer communities.</span>
-          <span>· I think that in times where control politics are increasing, the Internet is going to play a very important role in giving independence and freedom to individuals.</span>
+          <span>· Lorem ipsum dolor, sit amet consectetur adipisicing elit. In magni et voluptatum deleniti cumque nostrum quia nisi id dolores aut!.</span>
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="skills">
     <h2 class="section__title">Skills</h2>
     <h3 class="section__text__title">Technologies I use</h3>
     <div class="section__flex-icons">
@@ -107,7 +109,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="projects">
     <h2 class="section__title">Projects</h2>
     <div class="section__flex">
       <div class="section__card">
@@ -198,22 +200,16 @@
         <div class="swiper section__card__slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/hotel-miranda.png" alt="Front page hotel miranda">
+              <img src="img/picture-book1.png" alt="Front page hotel miranda">
             </div>
             <div class="swiper-slide">
-              <img src="img/hotel-miranda2.png" alt="Front page hotel miranda">
+              <img src="img/picture-book2.png" alt="Front page hotel miranda">
             </div>
             <div class="swiper-slide">
-              <img src="img/hotel-miranda3.png" alt="Front page hotel miranda">
+              <img src="img/picture-book3.png" alt="Front page hotel miranda">
             </div>
             <div class="swiper-slide">
-              <img src="img/hotel-miranda4.png" alt="Front page hotel miranda">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/hotel-miranda5.png" alt="Front page hotel miranda">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/hotel-miranda6.png" alt="Front page hotel miranda">
+              <img src="img/picture-book4.png" alt="Front page hotel miranda">
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -241,22 +237,13 @@
         <div class="swiper section__card__slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="img/hotel-miranda.png" alt="Front page hotel miranda">
+              <img src="img/notebook1.png" alt="Front page hotel miranda">
             </div>
             <div class="swiper-slide">
-              <img src="img/hotel-miranda2.png" alt="Front page hotel miranda">
+              <img src="img/notebook2.png" alt="Front page hotel miranda">
             </div>
             <div class="swiper-slide">
-              <img src="img/hotel-miranda3.png" alt="Front page hotel miranda">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/hotel-miranda4.png" alt="Front page hotel miranda">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/hotel-miranda5.png" alt="Front page hotel miranda">
-            </div>
-            <div class="swiper-slide">
-              <img src="img/hotel-miranda6.png" alt="Front page hotel miranda">
+              <img src="img/notebook3.png" alt="Front page hotel miranda">
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -280,8 +267,11 @@
       </div>
     </div>
   </section>
+  <div class="section__anchor">
+    <a href="https://github.com/nicolascou" class="section__anchor">Go to my Github to see all my projects <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <h2 class="footer__title">Contact</h2>
     <div class="section__flex">
       <div class="flex-center">

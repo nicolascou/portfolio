@@ -66,3 +66,28 @@
     margin-bottom: 40px;
   }
 }
+
+@include largeScreen {
+  .hero {
+    flex-direction: row;
+    border-bottom: 1px solid black;
+
+    &__presentation {
+      max-width: 800px;
+    }
+
+    &__title {
+      font-size: 50px;
+    }
+    &__subtitle {
+      font-size: 45px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+    
+    &__image {
+      width: 45%;
+    }
+  }
+}
