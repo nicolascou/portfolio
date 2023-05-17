@@ -231,6 +231,10 @@
   height: 70px;
   margin: 20px;
 }
+.section__icon-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
 .section__card {
   background-color: white;
   border-radius: 8px;
