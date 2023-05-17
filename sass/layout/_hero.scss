@@ -70,7 +70,7 @@
 @include largeScreen {
   .hero {
     flex-direction: row;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid white;
 
     &__presentation {
       max-width: 800px;
