@@ -39,7 +39,7 @@ navItems.forEach((item) => {
     item.classList.add('header__navbar__item--active');
 
     window.scrollTo({
-      behavior: 'auto',
+      behavior: 'smooth',
       top: targetSection.getBoundingClientRect().top  + window.pageYOffset - 100
     });
   });
