@@ -235,6 +235,9 @@
   margin-bottom: 30px;
   max-width: 800px;
 }
+.section__icon-box:last-child {
+  margin-bottom: 0;
+}
 .section__card {
   background-color: white;
   border-radius: 8px;
